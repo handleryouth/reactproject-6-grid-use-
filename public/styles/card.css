@@ -1,0 +1,106 @@
+.card-container {
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box2 box5"
+    "box3 box4 box4 box5";
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  padding: 2vw;
+  border-radius: 5px;
+}
+
+.box1 {
+  grid-area: box1;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.box2 {
+  grid-area: box2;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.box3 {
+  grid-area: box3;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px -1px 16px 0px rgba(0, 0, 0, 0.75);
+  color: hsl(217, 19%, 35%);
+}
+
+.box4 {
+  grid-area: box4;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.box5 {
+  grid-area: box5;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px -1px 16px 0px rgba(0, 0, 0, 0.75);
+  color: hsl(217, 19%, 35%);
+}
+.personal-container {
+  display: flex;
+  align-items: center;
+}
+
+.personal-picture {
+  border-radius: 50px;
+}
+
+.personal {
+  margin-left: 1rem;
+}
+
+.personal p {
+  margin: 0.1rem;
+}
+
+.position {
+  color: hsl(0, 0%, 81%);
+}
+
+@media all and (max-width: 1000px) {
+  .card-container {
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box4"
+      "box3"
+      "box5";
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    padding: 4vw;
+  }
+
+  .personal-container{
+    font-size: 3.5vw;
+  }
+
+.personal-picture{
+  width: 11vw;
+}
+
+  .title{
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.description {
+    font-size: 3.2vw;
+    font-weight: 500;
+    line-height:6vw;
+}
+
+}
