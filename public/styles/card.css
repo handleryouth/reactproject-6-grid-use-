@@ -51,11 +51,13 @@
 }
 
 .personal-picture {
-  border-radius: 50px;
+  border-radius: 50%;
+  width: 4vw;
 }
 
 .personal {
   margin-left: 1rem;
+  font-size: 1.5vw;
 }
 
 .personal p {
@@ -66,6 +68,14 @@
   color: hsl(0, 0%, 81%);
 }
 
+.title {
+  font-size: 2.5vw;
+}
+
+.description {
+  font-size: 1.5vw;
+}
+
 @media all and (max-width: 1000px) {
   .card-container {
     grid-template-areas:
@@ -74,6 +84,7 @@
       "box4"
       "box3"
       "box5";
+    row-gap: 10vw;
   }
 
   .box1,
@@ -84,23 +95,26 @@
     padding: 4vw;
   }
 
-  .personal-container{
+  .personal {
     font-size: 3.5vw;
   }
 
-.personal-picture{
-  width: 11vw;
-}
+  .personal-container {
+    font-size: 3.5vw;
+  }
 
-  .title{
-  font-size: 5vw;
-  font-weight: 600;
-}
+  .personal-picture {
+    width: 11vw;
+  }
 
-.description {
+  .title {
+    font-size: 5vw;
+    font-weight: 600;
+  }
+
+  .description {
     font-size: 3.2vw;
     font-weight: 500;
-    line-height:6vw;
-}
-
+    line-height: 6vw;
+  }
 }
