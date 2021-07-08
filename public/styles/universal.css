@@ -4,7 +4,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-@media all and (min-device-width: 1001px) and (max-device-width: 1753px) {
+@media all and (min-device-width: 1001px) and (max-device-width: 1753px) and (min-device-height: 1366px) {
   body {
     position: absolute;
     height: 100%;
